@@ -1,0 +1,62 @@
+* {
+  font-family: cursive;
+  box-sizing: border-box;
+}
+
+/* add background color and space on sides of images */
+body, html {
+  margin: 0;
+  padding: 0 30px 0px 30px;
+  background-color:#C4D979;
+}
+
+/* transparent box behind text for legibility */
+.textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  padding: 10px;
+  background-color: rgba(245,245,245,0.5);
+}
+
+h2 {
+  text-align: center;
+}
+
+/* header contians boackground image and text */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('photo6.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* apply flex to div directly within parent .insetContainer */
+.insetContainer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* apply to all images within insetContainer */
+.insetContainer img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* apply to all p in div of class .insetContainer */
+.insetContainer div p {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* apply bold font-weight to only first p in div of class .insetContainer */
+.insetContainer div p:first-child {
+  font-weight: bold;
+}
